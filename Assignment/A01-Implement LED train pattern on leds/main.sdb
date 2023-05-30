@@ -1,0 +1,48 @@
+[p GLOBOPT AUTOSTATIC LFSROK ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4580 ]
+[d frameptr 4065 ]
+"62 /opt/microchip/xc8/v2.41/pic/sources/c90/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /opt/microchip/xc8/v2.41/pic/sources/c90/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 /opt/microchip/xc8/v2.41/pic/sources/c90/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 /opt/microchip/xc8/v2.41/pic/sources/c90/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"19 /opt/microchip/xc8/v2.41/pic/sources/c90/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 /opt/microchip/xc8/v2.41/pic/sources/c90/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 /opt/microchip/xc8/v2.41/pic/sources/c90/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 /opt/microchip/xc8/v2.41/pic/sources/c90/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 /opt/microchip/xc8/v2.41/pic/sources/c90/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /opt/microchip/xc8/v2.41/pic/sources/c90/common/Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"10 /home/isaa/Desktop/ECEP/4-MC/assignment/A01-Implement LED train pattern on leds/main.c
+[v _main main `(i  1 e 2 0 ]
+"50
+[v _init_config init_config `(v  1 e 1 0 ]
+"25714 /opt/microchip/xc8/v2.41/pic/include/proc/pic18f4580.h
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"27059
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"10 /home/isaa/Desktop/ECEP/4-MC/assignment/A01-Implement LED train pattern on leds/main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"13
+[v main@i i `i  1 a 2 5 ]
+[v main@wait wait `i  1 a 2 3 ]
+"48
+} 0
+"50
+[v _init_config init_config `(v  1 e 1 0 ]
+{
+"54
+} 0
