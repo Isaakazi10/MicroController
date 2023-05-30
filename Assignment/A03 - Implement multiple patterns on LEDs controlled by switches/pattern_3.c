@@ -2,6 +2,6 @@
 
 int pattern_3()
 {
-    PORTB = 0x0A;
+    PORTB = 0xAA;
     PORTB = ~PORTB;
 }
