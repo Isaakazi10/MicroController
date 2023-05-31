@@ -1,7 +1,11 @@
 #include "main.h"
 
-int pattern_3()
+extern int wait, i;
+void pattern_3()
 {
-    PORTB = 0xAA;
+    for (int i = 0; i < 28000; i++)
+        ;
     PORTB = ~PORTB;
+    for (int i = 0; i < 28000; i++)
+        ;
 }

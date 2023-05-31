@@ -1,29 +1,24 @@
 #include "main.h"
 
-int pattern_2()
-{
-    int wait = 0, i = 0;
-    PORTB = 0x00;
+extern int wait, i;
 
-    while (i != -1)
+void pattern_2()
+{
+    if (wait++ && (wait == 10000))
     {
-        if (wait++ && (wait == 30000))
+        if (i < 8)
         {
-            if (i < 8)
-            {
-                PORTB = PORTB | (1 << i);
-            }
-            else if ((i >= 8) && (i < 16))
-            {
-                PORTB = PORTB & ~(1 << (i % 8));
-                if (i == 15)
-                {
-                    i = -1;
-                    continue;
-                }
-            }
-            i++;
-            wait = 0;
+            PORTB = PORTB | (1 << i);
         }
+        else if ((i >= 8) && (i < 16))
+        {
+            PORTB = PORTB & ~(1 << (i % 8));
+            if (i == 15)
+            {
+                i = -1;
+            }
+        }
+        i++;
+        wait = 0;
     }
 }
