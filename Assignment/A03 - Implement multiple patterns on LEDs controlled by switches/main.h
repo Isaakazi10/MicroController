@@ -1,8 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+// Libary for PIC microcontroller
 #include <xc.h>
 
+// Prototypes of Functions used in program.
 void init_config();
 char read_digital_keyboard();
 
