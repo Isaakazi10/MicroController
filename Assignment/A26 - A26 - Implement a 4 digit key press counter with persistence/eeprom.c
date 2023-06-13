@@ -1,5 +1,4 @@
 #include "main.h"
-#include "eeprom.h"
 
 void write_internal_eeprom(unsigned char address, unsigned char data)
 {

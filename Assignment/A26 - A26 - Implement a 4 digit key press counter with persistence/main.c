@@ -9,12 +9,12 @@ Date        : 20/5/2023
 static unsigned char data[] = {ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE};
 static unsigned char ssd[MAX_SSD_CNT];
 
+unsigned int count = 0, i = 0, key = 0, wait = 0;
+
 int main()
 {
     // Calling of init_ssd_config function
     init_ssd_config();
-
-    unsigned int count = 0, i = 0, key = 0, wait = 0;
 
     // While 1
     while (1)
@@ -27,6 +27,13 @@ int main()
             if (wait == 200)
             {
                 count = 0;
+            }
+        }
+        else if (key == 0x0D)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                write_internal_eeprom(i, *((char *)&count + i));
             }
         }
         else if (wait < 200 && wait != 0)
@@ -57,4 +64,9 @@ void init_ssd_config()
     TRISA = TRISA & 0xF0;
 
     PORTA = PORTA & 0xF0;
+
+    for (int i = 0; i < 2; i++)
+    {
+        *((char *)&count + i) = read_internal_eeprom(i);
+    }
 }
