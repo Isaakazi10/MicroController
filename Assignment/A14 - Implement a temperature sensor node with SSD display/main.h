@@ -25,15 +25,13 @@
 
 #define UNDERSCORE 0x40
 
+// For temp
+#define DEG 0x0F
+#define C 0xC6
+
 // Function used in this program.
+void init_config(void);
 void init_ssd_config();
 void display(unsigned char *data);
-
-// For Digital keyboard
-char read_digital_keyboard(unsigned char detection);
-
-// For EEPROM
-void write_internal_eeprom(unsigned char address, unsigned char data);
-unsigned char read_internal_eeprom(unsigned char address);
 
 #endif

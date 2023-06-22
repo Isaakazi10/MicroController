@@ -3,6 +3,9 @@
 
 #include <xc.h>
 
+#define LEVEL 0
+#define EDGE 1
+
 // defining MACROs
 #define MAX_SSD_CNT 4
 
@@ -23,7 +26,15 @@
 #define UNDERSCORE 0x40
 
 // Function used in this program.
+void init_config(void);
 void init_ssd_config();
 void display(unsigned char *data);
+
+// For Digital keyboard
+char read_digital_keyboard(unsigned char detection);
+
+// For EEPROM
+void write_internal_eeprom(unsigned char address, unsigned char data);
+unsigned char read_internal_eeprom(unsigned char address);
 
 #endif

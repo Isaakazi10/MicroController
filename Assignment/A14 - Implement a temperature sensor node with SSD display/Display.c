@@ -11,7 +11,7 @@ void display(unsigned char *data)
         PORTA = (PORTA & 0xF0) | (0x01 << i);
 
         // Delay for loop
-        for (int wait = 0; wait < 500; wait++)
+        for (int wait = 0; wait < 1000; wait++)
             ;
     }
 }
